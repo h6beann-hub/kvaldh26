@@ -27,6 +27,7 @@
 		tee=andmed.routes[0];
 		console.log(tee["duration"], tee["distance"]);
 		console.log(tee["geometry"]);
+		L.geoJSON(tee.geometry).addTo(kaart);
 	}
    function vajutus(e){
 	     hypik.setLatLng(e.latlng).
